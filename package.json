@@ -1,0 +1,27 @@
+{
+  "name": "mt-geo",
+  "version": "0.0.1",
+  "description": "Geodesy representation conversion functions.",
+  "main": "mt-geo.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterhaldbaek/mt-geo.git"
+  },
+  "keywords": [
+    "geo",
+    "geodesy",
+    "longitude",
+    "latitude",
+    "dms",
+    "bearing"
+  ],
+  "author": "Peter Haldbæk <peter.haldbaek@gmail.com>",
+  "contributors": [
+    "Peter Haldbæk <peter.haldbaek@gmail.com> (https://github.com/peterhaldbaek)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterhaldbaek/mt-geo/issues"
+  },
+  "homepage": "https://github.com/peterhaldbaek/mt-geo"
+}

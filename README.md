@@ -29,7 +29,7 @@ suffixed by compass direction (NSEW). A variety of separators are accepted (eg 3
 or fixed-width format without separators (eg. 0033709W). Seconds and minutes may be omitted.
 (Note minimal validation is done).
 
-__dms__ (string|number) Degrees or deg/min/sec in variety of formats
+- __dms__ (string|number) Degrees or deg/min/sec in variety of formats
 
 ```
 var latitude = geo.parseDMS('51° 28′ 40.12″ N');
