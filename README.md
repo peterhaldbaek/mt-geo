@@ -17,6 +17,9 @@ The module is initialized like every other Node module.
 
     var geo = require('mt-geo');
 
+The module contains functions for converting geodesy representations.
+
+
 ### parseDMS(dms)
 
 Parses string representing degrees/minutes/seconds into numeric degrees.
@@ -26,7 +29,7 @@ suffixed by compass direction (NSEW). A variety of separators are accepted (eg 3
 or fixed-width format without separators (eg. 0033709W). Seconds and minutes may be omitted.
 (Note minimal validation is done).
 
-* {String|Number} dms: Degrees or deg/min/sec in variety of formats
+__dms__ (string|number) Degrees or deg/min/sec in variety of formats
 
 ```
 var latitude = geo.parseDMS('51° 28′ 40.12″ N');
@@ -42,9 +45,9 @@ Convert decimal degrees to deg/min/sec format.
 Degree, prime, double-prime symbols are added, but sign is discarded, though no compass
 direction is added
 
-* {Number} deg: Degrees
-* {String} [format=dms]: Return value as 'd', 'dm', 'dms'
-* {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+__deg__ (nnumber) Degrees
+[__format__] (string) Return value as 'd', 'dm', 'dms'
+[__dp__] (number) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var dms = geo.toDMS('47.54');
@@ -56,9 +59,9 @@ var dms = geo.toDMS('47.54');
 
 Convert numeric degrees to deg/min/sec latitude (suffixed with N/S).
 
-* {Number} deg: Degrees
-* {String} [format=dms]: Return value as 'd', 'dm', 'dms'
-* {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+__deg__ (nnumber) Degrees
+[__format__] (string) Return value as 'd', 'dm', 'dms'
+[__dp__] (number) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var latitude = geo.toLat('47.54');
@@ -70,9 +73,9 @@ var latitude = geo.toLat('47.54');
 
 Convert numeric degrees to deg/min/sec longitude (suffixed with E/W).
 
-* {Number} deg: Degrees
-* {String} [format=dms]: Return value as 'd', 'dm', 'dms'
-* {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+__deg__ (nnumber) Degrees
+[__format__] (string) Return value as 'd', 'dm', 'dms'
+[__dp__] (number) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var longitude = geo.toLon('47.54');
@@ -84,9 +87,9 @@ var longitude = geo.toLon('47.54');
 
 Convert numeric degrees to deg/min/sec as a bearing (0º..360º).
 
-* {Number} deg: Degrees
-* {String} [format=dms]: Return value as 'd', 'dm', 'dms'
-* {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+__deg__ (nnumber) Degrees
+[__format__] (string) Return value as 'd', 'dm', 'dms'
+[__dp__] (number) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var bearing = geo.toBearing('47.54');
