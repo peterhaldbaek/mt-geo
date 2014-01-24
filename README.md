@@ -45,9 +45,9 @@ Convert decimal degrees to deg/min/sec format.
 Degree, prime, double-prime symbols are added, but sign is discarded, though no compass
 direction is added
 
-__deg__ (nnumber) Degrees
-__format__ (string, optional) Return value as 'd', 'dm', 'dms'
-__dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+- __deg__ (nnumber) Degrees
+- __format__ (string, optional) Return value as 'd', 'dm', 'dms'
+- __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var dms = geo.toDMS('47.54');
@@ -59,9 +59,9 @@ var dms = geo.toDMS('47.54');
 
 Convert numeric degrees to deg/min/sec latitude (suffixed with N/S).
 
-__deg__ (nnumber) Degrees
-__format__ (string, optional) Return value as 'd', 'dm', 'dms'
-__dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+- __deg__ (nnumber) Degrees
+- __format__ (string, optional) Return value as 'd', 'dm', 'dms'
+- __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var latitude = geo.toLat('47.54');
@@ -73,9 +73,9 @@ var latitude = geo.toLat('47.54');
 
 Convert numeric degrees to deg/min/sec longitude (suffixed with E/W).
 
-__deg__ (nnumber) Degrees
-__format__ (string, optional) Return value as 'd', 'dm', 'dms'
-__dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+- __deg__ (nnumber) Degrees
+- __format__ (string, optional) Return value as 'd', 'dm', 'dms'
+- __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var longitude = geo.toLon('47.54');
@@ -87,9 +87,9 @@ var longitude = geo.toLon('47.54');
 
 Convert numeric degrees to deg/min/sec as a bearing (0º..360º).
 
-__deg__ (nnumber) Degrees
-__format__ (string, optional) Return value as 'd', 'dm', 'dms'
-__dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
+- __deg__ (nnumber) Degrees
+- __format__ (string, optional) Return value as 'd', 'dm', 'dms'
+- __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
 ```
 var bearing = geo.toBearing('47.54');
