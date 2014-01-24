@@ -7,7 +7,7 @@ Geodesy representation conversion functions.
 Installation
 ------------
 
-  npm install mt-geo
+    npm install mt-geo
 
 
 Usage
@@ -15,7 +15,7 @@ Usage
 
 The module is initialized like every other Node module.
 
-  var geo = require('mt-geo');
+    var geo = require('mt-geo');
 
 ### parseDMS(dms)
 
