@@ -15,7 +15,7 @@ Usage
 
 The module is initialized like every other Node module.
 
-    var geo = require('mt-geo');
+var geo = require('mt-geo');
 
 ### parseDMS(dms)
 
@@ -28,10 +28,12 @@ or fixed-width format without separators (eg 0033709W). Seconds and minutes may 
 
 * {String|Number} dms: Degrees or deg/min/sec in variety of formats
 
-    var latitude = geo.parseDMS('51° 28′ 40.12″ N');
-    => 51.477811
-    var longitude = geo.parseDMS('000° 00′ 05.31″ W');
-    => -0.001475
+```
+var latitude = geo.parseDMS('51° 28′ 40.12″ N');
+=> 51.477811
+var longitude = geo.parseDMS('000° 00′ 05.31″ W');
+=> -0.001475
+```
 
 
 ### toDMS(deg, format, dp)
@@ -44,8 +46,10 @@ direction is added
 * {String} [format=dms]: Return value as 'd', 'dm', 'dms'
 * {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-    var dms = geo.toDMS('47.54');
-    => 047°32′24″
+```
+var dms = geo.toDMS('47.54');
+=> 047°32′24″
+```
 
 
 ### toLat(deg, format, dp)
@@ -56,8 +60,10 @@ Convert numeric degrees to deg/min/sec latitude (suffixed with N/S).
 * {String} [format=dms]: Return value as 'd', 'dm', 'dms'
 * {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-    var latitude = geo.toLat('47.54');
-    => 47°32′24″N
+```
+var latitude = geo.toLat('47.54');
+=> 47°32′24″N
+```
 
 
 ### toLon(deg, format, dp)
@@ -68,8 +74,10 @@ Convert numeric degrees to deg/min/sec longitude (suffixed with E/W).
 * {String} [format=dms]: Return value as 'd', 'dm', 'dms'
 * {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-    var longitude = geo.toLon('47.54');
-    => 047°32′24″E
+```
+var longitude = geo.toLon('47.54');
+=> 047°32′24″E
+```
 
 
 ### toBearing(deg, format, dp)
@@ -80,8 +88,10 @@ Convert numeric degrees to deg/min/sec as a bearing (0º..360º).
 * {String} [format=dms]: Return value as 'd', 'dm', 'dms'
 * {Number} [dp=0|2|4]: No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-    var bearing = geo.toBearing('47.54');
-    => 047°32′24″
+```
+var bearing = geo.toBearing('47.54');
+=> 047°32′24″
+```
 
 
 
