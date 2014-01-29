@@ -171,7 +171,7 @@
   } else if (typeof exports === 'object') {
       module.exports = Geo;
   } else {
-      root.LatLon = Geo;
+      root.Geo = Geo;
   }
 
 })(this);

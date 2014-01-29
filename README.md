@@ -33,9 +33,9 @@ or fixed-width format without separators (eg. 0033709W). Seconds and minutes may
 
 ```
 var latitude = geo.parseDMS('51° 28′ 40.12″ N');
-=> 51.477811
+// => 51.477811
 var longitude = geo.parseDMS('000° 00′ 05.31″ W');
-=> -0.001475
+// => -0.001475
 ```
 
 
@@ -51,7 +51,7 @@ direction is added
 
 ```
 var dms = geo.toDMS('47.54');
-=> 047°32′24″
+// => 047°32′24″
 ```
 
 
@@ -65,7 +65,7 @@ Convert numeric degrees to deg/min/sec latitude (suffixed with N/S).
 
 ```
 var latitude = geo.toLat('47.54');
-=> 47°32′24″N
+// => 47°32′24″N
 ```
 
 
@@ -79,7 +79,7 @@ Convert numeric degrees to deg/min/sec longitude (suffixed with E/W).
 
 ```
 var longitude = geo.toLon('47.54');
-=> 047°32′24″E
+// => 047°32′24″E
 ```
 
 
@@ -93,7 +93,7 @@ Convert numeric degrees to deg/min/sec as a bearing (0º..360º).
 
 ```
 var bearing = geo.toBearing('47.54');
-=> 047°32′24″
+// => 047°32′24″
 ```
 
 
