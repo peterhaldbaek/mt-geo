@@ -1,6 +1,8 @@
 mt-geo
 ======
 
+[![Build Status](https://travis-ci.org/peterhaldbaek/mt-geo.svg?branch=master)](https://travis-ci.org/peterhaldbaek/mt-geo)
+
 Geodesy representation conversion functions.
 
 
