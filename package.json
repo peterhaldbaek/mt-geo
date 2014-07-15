@@ -1,6 +1,6 @@
 {
   "name": "mt-geo",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Geodesy representation conversion functions.",
   "main": "mt-geo.js",
   "repository": {

@@ -21,12 +21,12 @@ describe('verification of standard cases', function() {
     expect((longitude).toFixed(4)).toBe('-77.0283');
   });
 
-	it('should parse DMS coordinates in Darwin', function() {
+  it('should parse DMS coordinates in Darwin', function() {
     var latitude = Geo.parseDMS('12 27 0S');
     expect(latitude).toBe(-12.45);
-		var longitude = Geo.parseDMS('130 50 0E');
-		expect((longitude).toFixed(4)).toBe('130.8333');
-	});
+    var longitude = Geo.parseDMS('130 50 0E');
+    expect((longitude).toFixed(4)).toBe('130.8333');
+  });
 
   it('should convert decimal degrees coordinates in Copenhagen to DMS', function() {
     var latitude = Geo.toLat(55.6761);
