@@ -9,15 +9,18 @@ Geodesy representation conversion functions.
 Installation
 ------------
 
-    $ npm install mt-geo
-
+```bash
+$ npm install mt-geo
+```
 
 Usage
 -----
 
 The module is initialized like every other Node module.
 
-    var geo = require('mt-geo');
+```js
+var geo = require('mt-geo');
+```
 
 The module contains functions for converting geodesy representations.
 
@@ -33,7 +36,7 @@ or fixed-width format without separators (eg. 0033709W). Seconds and minutes may
 
 - __dms__ (string|number) Degrees or deg/min/sec in variety of formats
 
-```
+```js
 var latitude = geo.parseDMS('51° 28′ 40.12″ N');
 // => 51.477811
 var longitude = geo.parseDMS('000° 00′ 05.31″ W');
@@ -51,7 +54,7 @@ direction is added
 - __format__ (string, optional) Return value as 'd', 'dm', 'dms'
 - __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-```
+```js
 var dms = geo.toDMS('47.54');
 // => 047°32′24″
 ```
@@ -65,7 +68,7 @@ Convert numeric degrees to deg/min/sec latitude (suffixed with N/S).
 - __format__ (string, optional) Return value as 'd', 'dm', 'dms'
 - __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-```
+```js
 var latitude = geo.toLat('47.54');
 // => 47°32′24″N
 ```
@@ -79,7 +82,7 @@ Convert numeric degrees to deg/min/sec longitude (suffixed with E/W).
 - __format__ (string, optional) Return value as 'd', 'dm', 'dms'
 - __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-```
+```js
 var longitude = geo.toLon('47.54');
 // => 047°32′24″E
 ```
@@ -93,7 +96,7 @@ Convert numeric degrees to deg/min/sec as a bearing (0º..360º).
 - __format__ (string, optional) Return value as 'd', 'dm', 'dms'
 - __dp__ (number, optional) No of decimal places to use - default 0 for dms, 2 for dm, 4 for d
 
-```
+```js
 var bearing = geo.toBearing('47.54');
 // => 047°32′24″
 ```
